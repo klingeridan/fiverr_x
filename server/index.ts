@@ -15,6 +15,8 @@ app.get('/api/items', function (req, res) {
     res.send('{"message":"Hello from the custom server!"}');
 });
 
+// ANOTHER API
+
 // All remaining requests return the React app, so it can handle routing.
 app.get('*', function (req, res) {
     res.sendFile(path.resolve(__dirname, '../react-app/dist', 'index.html'));
